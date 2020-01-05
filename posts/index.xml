@@ -15,12 +15,12 @@
 			<pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
 			
 			<guid>https://odamico.github.io/posts/post-title/</guid>
-			<description>Hello world! Welcome to my new GitHub Pages blog This site was generated using Hugo, a fast and simple framework for building static webpages. Hugo works nicely with GitHub pages for hosting simple web content. I hope to post personal projects and guides related to information security, programming, game development, data science, and more.</description>
+			<description>Hello world! Welcome to my new GitHub Pages blog This site was generated using Hugo, a fast and simple framework for building static webpages. Hugo works nicely with GitHub pages for hosting simple web content. I hope to post personal projects and guides related to information security, programming, game development, data science, and more!</description>
 			<content type="html"><![CDATA[<h1 id="hello-world">Hello world!</h1>
 <h3 id="welcome-to-my-new-github-pages-blog">Welcome to my new GitHub Pages blog</h3>
 <p>This site was generated using Hugo, a fast and simple framework for building static webpages.
 Hugo works nicely with GitHub pages for hosting simple web content. I hope to post personal projects and guides
-related to information security, programming, game development, data science, and more.</p>
+related to information security, programming, game development, data science, and more!</p>
 ]]></content>
 		</item>
 		
