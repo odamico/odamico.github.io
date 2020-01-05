@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://odamico.github.io/about-hugo/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://odamico.github.io/posts/post-title/</loc>
     <lastmod>2020-01-05T00:00:00+00:00</lastmod>
   </url>
@@ -55,11 +60,6 @@
   <url>
     <loc>https://odamico.github.io/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://odamico.github.io/about-hugo/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
