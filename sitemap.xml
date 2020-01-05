@@ -3,22 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://odamico.github.io/posts/post-title/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://odamico.github.io/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://odamico.github.io/posts/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://odamico.github.io/tags/demo/</loc>
     <lastmod>2018-12-24T12:29:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://odamico.github.io/tags/image/</loc>
-    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://odamico.github.io/</loc>
-    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://odamico.github.io/posts/</loc>
     <lastmod>2018-12-24T12:29:41+08:00</lastmod>
   </url>
   
