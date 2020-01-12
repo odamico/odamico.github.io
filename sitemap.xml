@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>https://odamico.github.io/posts/minidex/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://odamico.github.io/tags/datascience/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://odamico.github.io/posts/post-title/</loc>
     <lastmod>2020-01-05T00:00:00+00:00</lastmod>
   </url>
@@ -23,7 +33,18 @@
   </url>
   
   <url>
+    <loc>https://odamico.github.io/tags/python/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://odamico.github.io/tags/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://odamico.github.io/tags/webscraping/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

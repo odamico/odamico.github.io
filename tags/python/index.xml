@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Oscar D&#39;amico</title>
+    <link>https://odamico.github.io/tags/python/</link>
+    <description>Recent content in python on Oscar D&#39;amico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://odamico.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Science Project: Creating a Command Line Pokedex in Python3</title>
+      <link>https://odamico.github.io/posts/minidex/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://odamico.github.io/posts/minidex/</guid>
+      <description>Solving interesting problems and creating neat applications have always been the best motivators for me to program. While playing Pokemon Sun, I found myself googling the new species I would encounter quite often. I would take time to look at their stats and what they were weak to and strong against. These searches started taking up time very quickly. For reference, each page contains a table of contents like this:</description>
+    </item>
+    
+  </channel>
+</rss>
