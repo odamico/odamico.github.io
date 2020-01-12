@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://odamico.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Science Project: Creating a Command Line Pokedex in Python3</title>
+      <link>https://odamico.github.io/posts/minidex/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://odamico.github.io/posts/minidex/</guid>
+      <description>Solving interesting problems and creating neat applications have always been the best motivators for me to program. While playing Pokemon Sun, I found myself googling the new species I would encounter quite often. I would take time to look at their stats and what they were weak to and strong against. These searches started taking up time very quickly. For reference, each page contains a table of contents like this:</description>
+    </item>
     
     <item>
       <title>About Me</title>
@@ -19,15 +28,6 @@
       
       <guid>https://odamico.github.io/about-me/</guid>
       <description>I am currently pursuing an Honours Bachelor of Technology degree in Informatics and Security at Seneca College. My tech journey began with Java programming for my highschool computer science classes. From there, I learned about computer hardware basics through private classes. So far studying at Seneca, I have learned networking, Linux system administration, C programming, computer forensics, reverse engineering, database administration, penetration testing, and so much more. In my free time I enjoy practicing these skills and tinkering around with my own personal tech projects, this blog is dedicated to demonstrating some of those projects.</description>
-    </item>
-    
-    <item>
-      <title>Data Science Project: Creating a Command Line Pokedex in Python3</title>
-      <link>https://odamico.github.io/posts/minidex/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://odamico.github.io/posts/minidex/</guid>
-      <description>Solving interesting problems and creating neat applications have always been the best motivators for me to program. While playing Pokemon Sun, I found myself googling the new species I would encounter quite often. I would take time to look at their stats and what they were weak to and strong against. These searches started taking up time very quickly. For reference, each page contains a table of contents like this:</description>
     </item>
     
     <item>
