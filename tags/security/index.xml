@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Oscar D&#39;amico</title>
+    <link>https://odamico.github.io/tags/security/</link>
+    <description>Recent content in security on Oscar D&#39;amico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://odamico.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ARP poisoning using Kali Linux</title>
+      <link>https://odamico.github.io/posts/arppoisoning/</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://odamico.github.io/posts/arppoisoning/</guid>
+      <description>One of the fundamental protocols in the TCP/IP stack is the address resolution protocol, or ARP for short. This protocol maps IPv4 addresses to MAC addresses but performs no authentication by design. Because of this, we can send our own ARP traffic onto the network claiming to own an IP address which we really don&#39;t. In this post, I will be using this to my advantage in an ARP spoofing attack.</description>
+    </item>
+    
+  </channel>
+</rss>

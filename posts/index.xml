@@ -6,8 +6,108 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://odamico.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>ARP poisoning using Kali Linux</title>
+			<link>https://odamico.github.io/posts/arppoisoning/</link>
+			<pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://odamico.github.io/posts/arppoisoning/</guid>
+			<description>One of the fundamental protocols in the TCP/IP stack is the address resolution protocol, or ARP for short. This protocol maps IPv4 addresses to MAC addresses but performs no authentication by design. Because of this, we can send our own ARP traffic onto the network claiming to own an IP address which we really don&#39;t. In this post, I will be using this to my advantage in an ARP spoofing attack.</description>
+			<content type="html"><![CDATA[<p>One of the fundamental protocols in the TCP/IP stack is the address resolution protocol, or ARP for short.
+This protocol maps IPv4 addresses to MAC addresses but performs no authentication by design.
+Because of this, we can send our own ARP traffic onto the network claiming to own an IP address which we really don't.
+In this post, I will be using this to my advantage in an ARP spoofing attack. First, let's look at my networking setup.</p>
+<figure>
+    <img src="https://odamico.github.io/setup.png"
+         alt="Lab Network Diagram"/> <figcaption>
+            <p>Lab Network Diagram</p>
+        </figcaption>
+</figure>
+
+<p>My kali attacker will be forging arp packets claiming to be the ISP router and victim machine. This will allow the attacker to listen
+in on communications between the router and the victim (and later on, to alter those communications).</p>
+<p>Firstly, lets open up ettercap using the following command on our attacker</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ ettercap -G
+</code></pre></div><p>Once it's open, we select our bridged interface and click the &ldquo;accept&rdquo; button:</p>
+<figure>
+    <img src="https://odamico.github.io/ettercap-G.png"
+         alt="Ettercap interface"/> <figcaption>
+            <p>Ettercap GUI</p>
+        </figcaption>
+</figure>
+
+<p>Then, we can perform host discovery by clicking the &ldquo;scan&rdquo; button as seen below:</p>
+<figure>
+    <img src="https://odamico.github.io/scan.png"
+         alt="Ettercap scan button"/> <figcaption>
+            <p>Host discovery on 192.168.17.0/24</p>
+        </figcaption>
+</figure>
+
+<p>Since we know the hosts at 192.168.17.1 and 192.168.17.26 are our targets from our network diagram, we can just click to add
+the .1 entry to target 2 and the .26 entry to target 1. We should see these messages in the ettercap console to confirm:</p>
+<figure>
+    <img src="https://odamico.github.io/ettercapConsole.png"
+         alt="Ettercap console interface"/> <figcaption>
+            <p>Ettercap text console</p>
+        </figcaption>
+</figure>
+
+<p>With our targets in place, we select &ldquo;MITM Menu&rdquo; &ndash;&gt; &ldquo;ARP Poisoning&hellip;&rdquo; &ndash;&gt; &ldquo;Ok&rdquo; to start sending out our ARP packets.
+The confirmation can be seen in the console once again:</p>
+<figure>
+    <img src="https://odamico.github.io/Victims.png"
+         alt="Ettercap&#39;s confirmation of victim groups being poisoned"/> <figcaption>
+            <p>Ettercap text console confirming our victims are being poisoned</p>
+        </figcaption>
+</figure>
+
+<p>Why don't we perform a little bit of traffic analysis to see what ettercap is actually doing behind the scenes?
+Below is a tcpdump capture of the arp traffic that the attacker's network interface is seeing.</p>
+<figure>
+    <img src="https://odamico.github.io/tcpdumpARP.png"
+         alt="tcpdump on kali linux capturing ARP packets on eth0"/> <figcaption>
+            <p>tcpdump ARP packet capture</p>
+        </figcaption>
+</figure>
+
+<p>From the tcpdump output, we can see that the attacker responds to several ARP requests. The third ARP packet shows the attacker replying,
+saying that it is the owner of 192.168.17.25. This is true, that's our DHCP-assigned address. However, we can see that the attacker
+is also replying to queries for 192.168.17.26 and 192.168.17.1. The attacker is claiming that its MAC address of 00:0c:29:57:e9:0d
+corresponds to both of those IP addresses in ARP packet numbers 6 and 7 of our capture. I included the ip command output at the bottom
+to show that that really is our attacker's MAC address.</p>
+<p>Next, let's check on our victim to see if our attack worked. To do this, I will ping the gateway from the victim and see the
+results in our attacker's wireshark packet capture.</p>
+<figure>
+    <img src="https://odamico.github.io/arpPing.png"
+         alt="Ping from windows xp victim"/> <figcaption>
+            <p>Ping to gateway from windows xp victim</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://odamico.github.io/sharkICMP.png"
+         alt="wireshark on kali linux capturing ICMP packets between the gateway and victim"/> <figcaption>
+            <p>wireshark ICMP packet capture</p>
+        </figcaption>
+</figure>
+
+<p>Not only can we see icmp, we can also see http traffic as shown below:</p>
+<figure>
+    <img src="https://odamico.github.io/httpCapture.png"
+         alt="Eavesdropping on the vicitm&#39;s web traffic"/> <figcaption>
+            <p>HTTP traffic in wireshark</p>
+        </figcaption>
+</figure>
+
+<p>We've succesfully performed a basic ARP spoofing attack. In the future, I'd
+like to expand on this attack and get into spoofing some services, so stay
+tuned for a part 2!</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Data Science Project: Creating a Command Line Pokedex in Python3</title>
